@@ -1,13 +1,14 @@
 import React from "react";
+import "./index.css";
 
 function Footer () {
 
 
     return (
-        <footer>
-
-        </footer>
-    )
+        <footer className="footer">
+        <p>Some footer nonsense!</p>
+      </footer>
+    );
 }
 
 
