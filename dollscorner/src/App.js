@@ -1,49 +1,31 @@
-import React, { useState } from 'react';
-import Nav from './components/Nav';
+import React from 'react';
+import Navbar from './components/Nav';
 import Home from './components/Home';
 import About from './components/About';
 import DollsCorner from './components/DollsCorner';
 import Parentstips from './components/ParentTips'
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 
 function App() {
 
-  const [currentPage, handlePageChange] = useState('Home');
-
-  const renderPage = () => {
-    switch(currentPage) {
-      case 'About':
-        return <About />;
-        case 'Dolls Corner':
-        return <DollsCorner />;
-      case 'Parent Tips':
-        return <Parentstips />;
-      case 'Contact':
-        return <Contact />;
-      default:
-        return <Home />
-
-    }
-  }
-
 
   return (
-    <div>
-    <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
-
-    <main>
-      {
-        // Render the component returned by 'renderPage()'
-        // YOUR CODE HERE
-        <div>{renderPage(currentPage)}</div>
-        //
-      }
-    </main>
-    <Footer />
-  </div>
-);
-}
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route path='/' exact component={Home} />
+          <Route path='/about' component={About} />
+          <Route path='/dollscorner' component={DollsCorner} />
+          <Route path='/parenttips' component={Parentstips} />
+          <Route path='/contact-us' component={Contact} />
+          {/* <Route path='/sign-up' component={SignUp} /> */}
+        </Switch>
+        <Footer />
+      </Router>
+    );
+  }
 
 export default App;
