@@ -24,13 +24,13 @@ const ContactForm = () => {
     alert(result.status);
   };
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className='Contact'>
       <div>
         <label htmlFor="name">Name:</label>
         <input type="text" id="name" required />
       </div>
       <div>
-        <label htmlFor="email">Emails:</label>
+        <label htmlFor="email">Email:</label>
         <input type="email" id="email" required />
       </div>
       <div>
