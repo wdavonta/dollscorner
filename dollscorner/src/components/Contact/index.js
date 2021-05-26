@@ -30,7 +30,7 @@ const ContactForm = () => {
         <input type="text" id="name" required />
       </div>
       <div>
-        <label htmlFor="email">Email:</label>
+        <label htmlFor="email">Emails:</label>
         <input type="email" id="email" required />
       </div>
       <div>
