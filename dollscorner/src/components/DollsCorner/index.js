@@ -3,14 +3,24 @@ import React from 'react';
 
 function DollsCorner() {
   return (
-    <section className="my-5">
-      <h1 id="home">Dolls Corner</h1>
-      <div className="my-2">
-        <p> Welcome!!
-        </p>
+    <div class="container-fluid bg-3 text-center">    
+      <h3 class="margin">Dolls Corner</h3>
+      <div class="row">
+        <div class="col-sm-4">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+         
+        </div>
+        <div class="col-sm-4"> 
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+         
+        </div>
+        <div class="col-sm-4"> 
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          
+        </div>
       </div>
-    </section>
-  );
-}
+    </div>
+      );
+    }
 
 export default DollsCorner;
