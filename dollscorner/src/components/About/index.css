@@ -35,6 +35,10 @@ body {
     color: white;
   }
   
+  .column p{
+      color:#000
+
+  }
   .container {
     padding: 0 16px;
   }
@@ -71,3 +75,4 @@ body {
       display: block;
     }
   }
+  
