@@ -3,15 +3,34 @@ import './index.css';
 
 function About() {
   return (
-    <section>
-    <div class="container-fluid bg-3 text-center">    
-      <h3 class="margin">Dolls Corner!</h3>
-      <div className="my-2">
-        <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius
-        </p>
+
+
+    <div class="about-section">
+  <h1>About Us Page</h1>
+  <p>Some text about who we are and what we do.</p>
+  <p>Resize the browser window to see that this page is responsive by the way.</p>
+
+
+{/* <h2 style="text-align:center">Our Team</h2> */}
+
+
+  <div class="column">
+    <div class="card">
+      {/* <img src="/w3images/team2.jpg" alt="Mike" style="width:100%"/> */}
+      <div class="container">
+        <h2>Mike Ross</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>mike@example.com</p>
+        <p><button class="button">Contact</button></p>
       </div>
-      </div>
-    </section>
+    </div>
+  </div>
+</div>
+
+
+
+    
   );
 }
 
