@@ -18,7 +18,7 @@ function About() {
     <div class="card">
       {/* <img src="/w3images/team2.jpg" alt="Mike" style="width:100%"/> */}
       <div class="container">
-        <h2>Tameka Hanford</h2>
+        <h2 class="color">Tameka Hanford</h2>
         <p class="title">CEO & Founder</p>
         <p>Some text that describes me lorem ipsum ipsum lorem.</p>
         <p>tameka@example.com</p>
