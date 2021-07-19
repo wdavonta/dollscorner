@@ -1,4 +1,4 @@
-.Contact {
+/* .Contact {
     margin: auto;
     width: 50%;
     padding: 10px;
@@ -7,4 +7,10 @@
 
   button {
     justify-content: center;
+  } */
+
+  .form-group {
+    width: 500px;
+    display: block;
+    margin: auto;
   }
