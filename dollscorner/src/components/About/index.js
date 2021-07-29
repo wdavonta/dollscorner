@@ -1,5 +1,7 @@
 import React from 'react';
 import './index.css';
+import { Link } from 'react-router-dom';
+
 
 function About() {
   return (
@@ -22,7 +24,7 @@ function About() {
         <p class="title">CEO & Founder</p>
         <p>Some text that describes me lorem ipsum ipsum lorem.</p>
         <p>tameka@example.com</p>
-        <p><button class="button">Contact</button></p>
+        <p><Link to="/contact-us"><button class="button">Contact</button></Link></p>
       </div>
     </div>
   </div>

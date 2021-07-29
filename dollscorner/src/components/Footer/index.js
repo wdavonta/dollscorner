@@ -6,7 +6,7 @@ function Footer () {
 
     return (
         <footer className="footer">
-        <p>Some footer nonsense!</p>
+        <p>© 2021 Da'Vonta</p>
       </footer>
     );
 }
