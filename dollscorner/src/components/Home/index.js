@@ -37,7 +37,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Carousel from "react-elastic-carousel";
-import Item from "./Item";
+import corn from './images/ccorn.jpeg';
 import "./style.css";
 
 
@@ -55,14 +55,14 @@ function Home() {
       <h1 style={{ textAlign: "center" }}>Example to setup your carousel in react</h1>
       <div className="App">
         <Carousel breakPoints={breakPoints}>
-          <Item>One</Item>
-          <Item>Two</Item>
-          <Item>Three</Item>
-          <Item>Four</Item>
-          <Item>Five</Item>
-          <Item>Six</Item>
-          <Item>Seven</Item>
-          <Item>Eight</Item>
+        <img src={corn} alt="" style={{width:'200px',height:'200px'}}/>
+        <img src={corn} alt="" style={{width:'200px',height:'200px'}}/>
+        <img src={corn} alt="" style={{width:'200px',height:'200px'}}/>
+        <img src={corn} alt="" style={{width:'200px',height:'200px'}}/>
+        <img src={corn} alt="" style={{width:'200px',height:'200px'}}/>
+        <img src={corn} alt="" style={{width:'200px',height:'200px'}}/>
+        <img src={corn} alt="" style={{width:'200px',height:'200px'}}/>
+
         </Carousel>
       </div>
     </>
@@ -72,3 +72,4 @@ function Home() {
 const rootElement = document.getElementById("root");
 ReactDOM.render(<Home />, rootElement);
 export default Home;
+

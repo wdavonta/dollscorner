@@ -1,6 +1,7 @@
 import React from 'react';
 import './index.css';
 import { Link } from 'react-router-dom';
+import mangoinferno from './images/mangoinferno.jpg';
 
 
 function About() {
@@ -21,6 +22,7 @@ function About() {
       {/* <img src="/w3images/team2.jpg" alt="Mike" style="width:100%"/> */}
       <div class="container">
         <h2 class="color">Tameka Hanford</h2>
+        <img style={{width: 300, height: 300, borderRadius: 700/ 2}} alt="" className='mi'  src={mangoinferno} />
         <p class="title">CEO & Founder</p>
         <p>Some text that describes me lorem ipsum ipsum lorem.</p>
         <p>tameka@example.com</p>
