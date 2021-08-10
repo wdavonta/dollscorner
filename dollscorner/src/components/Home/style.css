@@ -13,3 +13,12 @@
   background: #efefef;
   text-align: center;
 }
+
+
+.App {
+  bottom: 150px;  /*important */
+  margin: 0 auto;  /*important */
+  max-width: none;  /*important */
+  min-width: 100%;
+  position: absolute;
+}
