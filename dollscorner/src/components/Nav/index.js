@@ -5,8 +5,8 @@ import {
     NavLink,
     Bars,
     NavMenu,
-    NavBtn,
-    NavBtnLink
+    // NavBtn,
+    // NavBtnLink
   } from './NavbarElements';
 
 const NavBar = () => {
@@ -14,7 +14,7 @@ const NavBar = () => {
 
         return (
             <>
-              <Nav>
+              <Nav className="justify-content-center">
                 <NavLink to='/'>
                   {/* <img src={require('../../images/logo.svg')} alt='logo' /> */}
                 </NavLink>
@@ -41,9 +41,9 @@ const NavBar = () => {
                   {/* Second Nav */}
                   {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
                 </NavMenu>
-                <NavBtn>
+                {/* <NavBtn>
                   <NavBtnLink to='/signin'>Sign In</NavBtnLink>
-                </NavBtn>
+                </NavBtn> */}
               </Nav>
             </>
           );
