@@ -120,15 +120,31 @@
 // }
 
 // export default ContactForm;
-
+import React from 'react';
+import './index.css';
+import emailjs from 'emailjs-com'
 
 const ContactForm = () => {
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      'service_m9bs9d7',
+      'template_2fbq3yj',
+       e.target,
+      "user_6w2Om2UIhKVRRhauCqiGW"
+      ).then(res=>{
+        console.log(res);
+      }).catch(err=> console.log(err));
+  }
   return (
     <div className= "container border"
     style= {{marginTop: "50px",
     width: '50%'}} >
       <h1 style ={{marginTop:'25px'}}> Contact Form</h1>
-      <form className="row" style= {{ margin:"25px 85px 75px 100px"}}>
+      <form className="row" style= {{ margin:"25px 85px 75px 100px"}}
+      onSubmit={sendEmail}
+      >
         <label>name</label>
         <input type ="text" name="name" className="form-control" />
 
